@@ -96,19 +96,47 @@ inquirer
       name: "managerOfficeNumber",
       message: "What is your manager's Office Number?",
     },
-
-    {
-      type: "list",
-      name: "addNewEmployee",
-      message: "Which type of team member would you like to add?",
-      choices: ["Intern", "Engineer", "Thank you, I'm done"],
-    },
   ])
   .then(answers => {
       console.log(answers);
       
       const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
       allEmployees.push(manager);
+      addEmployee();
+    function addEmployee() {
+        inquirer.prompt(
+            {
+                type: "list",
+                name: "addNewEmployee",
+                message: "Which type of team member would you like to add?",
+                choices: ["Intern", "Engineer", "Thank you, I'm done"],
+              },
+        ).then(answers => {
+            if (answers.addNewEmployee === "Engineer") {
+                inquirer.prompt(engineerQuestions).then(answers => {
+                    console.log(answers);
+                    // const engineer = new Engineer(answers.)
+                    addEmployee();
+                });
+            } else if (answers.addNewEmployee === "Intern") {
+                inquirer.prompt(internQuestions).then(answers => {
+                    console.log(answers);
+                    // const engineer = new Engineer(answers.)
+                    addEmployee();
+                });
+            } else {
+                console.log("Thank you! Your team page has been created!");
+            }
+        });
+    }
+    
+
+
+// add employee function:
+//
+
+
+
 
 
 
