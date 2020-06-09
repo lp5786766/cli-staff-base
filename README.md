@@ -12,11 +12,11 @@
 ## Description
 Staff/Team members webpage generator. The user is prompted a series of questions about their team in the command line.
 
-![Demo](assets\demo.gif)
+![Demo](/assets/demo.gif)
 
 You need to add 1 manager and any amount of Engineers or Interns. After you added all the members of your team choose "Thank you, I'm done", and a new html file will be generated with the team cards for each member.
-![HTML](assets\html.png)  
-![Page](assets\page.png)  
+![HTML](/assets/html.png)  
+![Page](/assets/page.png)  
 ## Installation-and-tests:
 For installation run this command:
 <pre><code>npm install</code></pre>
