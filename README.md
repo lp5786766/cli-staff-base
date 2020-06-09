@@ -3,7 +3,7 @@
 
 ## Table of Contents
 
-* [Description](##description)
+* [Description](#description)
 * [Installation-and-Tests](##installation-and-tests)
 * [Tests](##tests)
 * [Contributing](##contributing)
