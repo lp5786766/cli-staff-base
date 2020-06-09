@@ -10,6 +10,11 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
+const allEmployees = [];
+
+render(allEmployees);
+
+fs.writeFileSync(outputPath, data, "utf-8")
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
@@ -54,3 +59,23 @@ const render = require("./lib/htmlRenderer");
 // for further information. Be sure to test out each class and verify it generates an
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
+
+// What is your manager's name?
+// What is your manager's ID?
+// What is your manager's email?
+// What is your manager's office number?
+
+// Which type of team member would you like to add?
+// - Intern
+// - Engineer *****
+// - I'm done.
+
+// What is your engineer's name?
+// What is your engineer's ID?
+// What is your engineer's email
+// What is your engineer's Github?
+
+// Which type of team member would you like to add?
+// - Intern
+// - Engineer *****
+// - I'm done.
