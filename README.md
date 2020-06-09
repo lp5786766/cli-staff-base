@@ -4,9 +4,9 @@
 ## Table of Contents
 
 * [Description](#description)
-* [Installation-and-Tests](##installation-and-tests)
-* [Tests](##tests)
-* [Contributing](##contributing)
+* [Installation-and-Tests](#installation-and-tests)
+* [Tests](#tests)
+* [Contributing](#contributing)
 
 
 ## Description
